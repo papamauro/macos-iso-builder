@@ -91,7 +91,6 @@ jobs:
 
   build-macos-image:
     needs: preflight
-    if: needs.preflight.outputs._build == 'true'
     runs-on: macos-15-intel
     timeout-minutes: 80
 
